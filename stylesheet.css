@@ -44,7 +44,6 @@ nav {
   justify-content: center;
 }
 
-
 .nav-button {
  margin:5px; 
  color:white;
@@ -87,7 +86,7 @@ nav {
 }
 
 .active-page:hover {
-
+ background: #a3d9cb;
 }
 
 .content {
@@ -116,9 +115,11 @@ nav {
   outline: 1px solid rgba(0,0,0, 0.1);
   padding: 30px;
   border-radius:12px;
-  box-shadow: rgba(0,0,0,0.1) 0px 4px 10px 2px;
+  box-shadow: 0px 5px 0px 0px #deddda, rgba(0,0,0,0.1) 0px 8px 8px 1px;
   margin:30px;
 }
+
+
 
 .profile-pic {
   max-width: 80px;
