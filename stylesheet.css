@@ -124,7 +124,7 @@ nav {
   padding: 40px;
 }
 .company-contacts {
-  padding:20px;
+  //padding:20px;
   overflow:auto;
   width:fill;
   height: calc(100vh - 70px);
@@ -186,29 +186,32 @@ label {
 
 button {
   color:white;
-  background: #9141ac;
+  background: #6abe30;
   font-size:1.3em;
   border: 0;
   border-radius: 12px;
   padding: 8px;
   transform: translatey(-6px);
-  box-shadow: #613583 0px 8px;
-  border: 1px solid #9141ac;
+  box-shadow: #37946e 0px 8px;
+  border: 1px solid #37946e;
+
+  margin: auto;
+  display:block;
 }
 
 button:hover {
-  background: #c061cb;
+  background: #99e550;
   transform: translatey(-8px);
-  box-shadow: #813d9c 0px 10px;
-  border: 1px solid #c061cb;
+  box-shadow: #6abe30 0px 10px;
+  border: 1px solid #6abe30;
 }
 
 button:active {
-  background: #813d9c;
-  border:1px solid #813d9c;
-  color:lightgrey;
+  background: #37946e;
+  border:1px solid #4b692f;
+  color: #cbdbfc;
   transform: translatey(-2px);
-  box-shadow: #613583 0px 4px;
+  box-shadow: #4b692f 0px 4px;
 }
 
 /*
