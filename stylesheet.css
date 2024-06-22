@@ -1,30 +1,57 @@
 * {
   transition:250ms;
+  font-family: 'Ubuntu';
+}
+
+@font-face {
+  font-family: 'Railway';
+  src:  url('./fonts/Railway.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html, body {
   margin:0;
   padding:0;
-  height:100%;
+  height:100vh;
   box-sizing: border-box;
+}
+.bg-img {
+  background-image:  url("./img/bg-img_1-blur-light.jpg");
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+
+.logo {
+  max-height: 40px;
+  margin-left: 17.5vh;
 }
 
 nav {
-  background:#33d17a;
+  background:#478f7e;
   margin:auto;
   width:100vw;
-  height:auto;
-  min-height:50px;
+  height:60px;
   padding:5px;
-  box-shadow:#26a269 0px 8px , 0px 8px 5px 4px rgba(0,0,0,0.2);
+  box-shadow:#3d665c 0px 8px , 0px 10px 5px 4px rgba(0,0,0,0.2);
   box-sizing: border-box;
   border-radius:0px 0px 12px 12px;
-  
+  position: relative;
+  z-index: 500;
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-between;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 17.5vh;
+}
+
 .nav-button {
  margin:5px; 
  color:white;
@@ -38,29 +65,163 @@ nav {
  -webkit-user-select: none;
  cursor:pointer;
  width:auto;
- 
+ outline: 1px solid rgba(0,0,0,0.0);
+ text-decoration: none;
 }
 
 .nav-button:hover {
-  background:#2ec27e;
+  background:#64a697;
+  transform: translate(0px,-5px);
+  box-shadow: 0px 5px 0px 0px #3d665c,0px 10px 2px 0px rgba(0,0,0,0.1);
+  outline: 1px solid rgba(0,0,0,0.1);
 }
 
 .nav-button:active {
-  background:#26a269;
+  background:#468072;
+  outline: 1px solid rgba(0,0,0,0.1);
+  transform: translate(0px,0px);
+  box-shadow: inset 0px 5px 0px 0px #3d665c, inset 0px 10px 2px 0px rgba(0,0,0,0.1);
+  padding-bottom:2px;
+  padding-top:10px;
+  color:lightgrey;
+  transition: 250ms;
 }
 
-.nav-button::after {
-  //margin-right:12px;
-  //content:"|"
+.nav-button:first-child {
+  /*margin-right:12px;*/
+  content:"|"
 }
 
 .active-page {
-  background:white;
+  background:#85c7b6;
   color:black;
-  border-radius:12px 12px 0px 0px;
-  height:50px;
+  border-radius:12px;
+}
+
+.active-page:hover {
+ background: #a3d9cb;
+}
+.active-page:active {
+ background: transparent;
+
+ box-shadow: inset 0px 5px 0px 0px #3c6e62, inset 0px 10px 2px 0px rgba(0,0,0,0.1);
+ transition: 250ms;
 }
 
 .content {
-  padding:auto;
+  background: transparent;
+  display:grid;
+  grid-gap:0px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr max-content;
+  margin:auto;
+  max-width: 1600px;
+  padding-top:8px;
 }
+.customer-form {
+  grid-column: 1 / 2;
+}
+.customer-form > p {
+  padding: 40px;
+}
+.company-contacts {
+  padding:20px;
+  overflow:auto;
+  width:fill;
+  height: calc(100vh - 70px);
+  box-sizing: border-box;
+  grid-column: 2 / 2;
+}
+.contact-page-info {
+  color: black;
+  text-shadow: white 0px 0px 8px;
+  line-height: 1.5em;
+  padding: 30px;
+}
+.pod {
+  background-color: #ffffff;
+  outline: 1px solid rgba(0,0,0, 0.1);
+  padding: 30px;
+  border-radius:12px;
+  box-shadow: 0px 5px 0px 0px #c0bfbc, rgba(0,0,0,0.5) 0px 8px 8px 1px;
+  margin:30px;
+  perspective: 200px;
+}
+
+.seperate-pic {
+  line-height: 1.5em;
+  margin-right:20%;
+  padding-right:5px;
+  border-right:1px dotted gray;
+}
+
+.profile-pic {
+  max-height: 100px;
+  float: right;
+  border-radius: 50%;
+}
+
+.bg1 {
+ background-image: url('./img/bg-img_1.jpg');
+}
+
+input[name=textbox] {
+  padding: 10px;
+  font-size: 1.5em;
+  border-radius: 500px;
+  float:right;
+  width:80%;
+  box-shadow: inset 0px 5px lightgrey, inset rgba(0,0,0,0.1) 0px 8px 8px 1px;
+  border: 1px solid #ddd;
+}
+label {
+  margin: auto;
+  font-size: 1.5em;
+  float:none;
+}
+.form {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+}
+
+button {
+  color:white;
+  background: #6abe30;
+  font-size:1.3em;
+  border: 0;
+  border-radius: 12px;
+  padding: 8px;
+  transform: translatey(-6px);
+  box-shadow: #37946e 0px 8px;
+  border: 1px solid #37946e;
+
+  margin: auto;
+  display:block;
+}
+
+button:hover {
+  background: #99e550;
+  transform: translatey(-8px);
+  box-shadow: #6abe30 0px 10px;
+  border: 1px solid #6abe30;
+}
+
+button:active {
+  background: #37946e;
+  border:1px solid #4b692f;
+  color: #cbdbfc;
+  transform: translatey(-2px);
+  box-shadow: #4b692f 0px 4px;
+}
+
+/*
+// dark mode
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color:white;
+  }
+
+}
+*/
