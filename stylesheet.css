@@ -137,6 +137,7 @@ nav {
   text-shadow: white 0px 0px 8px;
   line-height: 1.5em;
   padding: 30px;
+  text-align: center;
 }
 .pod {
   background-color: #ffffff;
@@ -214,14 +215,3 @@ button:active {
   transform: translatey(-2px);
   box-shadow: #4b692f 0px 4px;
 }
-
-/*
-// dark mode
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #333;
-    color:white;
-  }
-
-}
-*/
