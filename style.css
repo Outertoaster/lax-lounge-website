@@ -1,7 +1,7 @@
 * {
-    font-family: sans-serif;
     margin: 0;
-    /* padding: 0; */
+    transition:250ms;
+    font-family: sans-serif;
 }
 
 /* Navigation Section */
@@ -137,7 +137,7 @@ h1 {
     color: #000;
     padding: 20px 30px;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
