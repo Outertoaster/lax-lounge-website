@@ -33,7 +33,7 @@ html, body {
 nav {
   background:#478f7e;
   margin:auto;
-  width:100vw;
+  width:99vw;
   height:60px;
   padding:5px;
   box-shadow:#3d665c 0px 8px , 0px 10px 5px 4px rgba(0,0,0,0.2);
@@ -214,4 +214,35 @@ button:active {
   color: #cbdbfc;
   transform: translatey(-2px);
   box-shadow: #4b692f 0px 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #478f7e;
+  padding: 20px;
+  width: 98%;
+  display: flex;
+}
+
+#return {
+  margin: auto 0;
+  font-size: 20px;
+}
+
+footer p {
+  margin: auto;
+}
+
+footer a {
+  text-decoration: none;
+  width: 25%;
+  color: black;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.social-links {
+  margin-left: auto;
 }

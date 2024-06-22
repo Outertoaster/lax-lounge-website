@@ -4,6 +4,15 @@
     font-family: sans-serif;
 }
 
+body {
+    background-image:  url("./img/bg-img_1-blur-light.jpg");
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+  }
+
 /* Navigation Section */
 .logo {
     max-height: 40px;
@@ -13,7 +22,7 @@
 nav {
     background: #478f7e;
     margin: auto;
-    width: 100vw;
+    width: 99vw;
     height: 60px;
     padding: 5px;
     box-shadow: #3d665c 0px 8px, 0px 10px 5px 4px rgba(0, 0, 0, 0.2);
@@ -89,7 +98,7 @@ nav {
 
 /* Body */
 body {
-    background-color: #2D4F47;
+    /* background-color: #2D4F47; */
     height: 100%;
 }
 
@@ -100,7 +109,8 @@ body {
 }
 
 h1 {
-    background-color: #85c7b6;
+    /* background-color: #85c7b6; */
+    background-color: #3d665c;
     color: white;
     padding: 30px;
     margin: 30px 0px 25px 0;
@@ -114,7 +124,8 @@ h1 {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: #85c7b6;
+    /* background-color: #85c7b6; */
+    background-color: #3d665c;
 }
 .video-container{
     position: relative;
