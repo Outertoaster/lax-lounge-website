@@ -27,7 +27,7 @@ html, body {
 
 .logo {
   max-height: 40px;
-  margin-right:10px;
+  margin-left: 17.5vh;
 }
 
 nav {
@@ -43,13 +43,13 @@ nav {
   z-index: 500;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-right: 17.5vh;
 }
 
 .nav-button {
@@ -66,6 +66,7 @@ nav {
  cursor:pointer;
  width:auto;
  outline: 1px solid rgba(0,0,0,0.0);
+ text-decoration: none;
 }
 
 .nav-button:hover {
@@ -80,8 +81,8 @@ nav {
   outline: 1px solid rgba(0,0,0,0.1);
   transform: translate(0px,0px);
   box-shadow: inset 0px 5px 0px 0px #3d665c, inset 0px 10px 2px 0px rgba(0,0,0,0.1);
-  //padding-bottom:2px;
-  //padding-top:10px;
+  padding-bottom:2px;
+  padding-top:10px;
   color:lightgrey;
   transition: 250ms;
 }
@@ -124,7 +125,7 @@ nav {
   padding: 40px;
 }
 .company-contacts {
-  //padding:20px;
+  padding:20px;
   overflow:auto;
   width:fill;
   height: calc(100vh - 70px);
