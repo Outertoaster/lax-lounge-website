@@ -27,7 +27,11 @@ html, body {
 
 .logo {
   max-height: 40px;
-  margin-right:10px;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: 10px;
+  user-select:none;
+ -webkit-user-select: none;
 }
 
 nav {
@@ -42,20 +46,28 @@ nav {
   position: relative;
   z-index: 500;
   display: flex;
+  transition: 0;
+}
+
+.nav-main {
+  margin:auto;
+  display:flex;
   align-items: center;
   justify-content: center;
+  transition: 0;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0;
 }
 
 .nav-button {
  margin:5px; 
  color:white;
- padding:10px;
+ padding:10px 30px 10px 30px;
  text-align:center;
  font-size:1.2em;
  font-weight:bold;
@@ -64,8 +76,9 @@ nav {
  user-select:none;
  -webkit-user-select: none;
  cursor:pointer;
- width:auto;
  outline: 1px solid rgba(0,0,0,0.0);
+ display:block;
+ text-decoration: none;
 }
 
 .nav-button:hover {
@@ -133,7 +146,7 @@ nav {
 }
 .contact-page-info {
   color: black;
-  text-shadow: white 0px 0px 8px;
+  //text-shadow: white 0px 0px 8px;
   line-height: 1.5em;
   padding: 30px;
 }
@@ -158,6 +171,7 @@ nav {
   max-height: 100px;
   float: right;
   border-radius: 50%;
+  margin-top: 6%;
 }
 
 .bg1 {
@@ -194,6 +208,7 @@ button {
   transform: translatey(-6px);
   box-shadow: #37946e 0px 8px;
   border: 1px solid #37946e;
+  width:50%;
 
   margin: auto;
   display:block;
